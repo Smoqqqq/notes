@@ -1,0 +1,13 @@
+.btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid $theme-header-bg;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: $theme-bg;
+    transition: $transition;
+    cursor: pointer;
+    &:hover{
+        background: $theme-header-bg;
+    }
+}

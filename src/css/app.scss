@@ -1,0 +1,55 @@
+$sidebar-length: 300px;
+$box-shadow: 0px 0px 10px rgba(139, 139, 139, 0.15);
+$transition: 0.35s;
+
+$theme-bg: #262626;
+$theme-header-bg: #101010;
+$theme-body-bg: #2C2C2C;
+
+// Font Sizes
+$h1fs: 40px;
+
+@import "btn";
+@import "notes";
+@import "edit-page";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	background: $theme-body-bg;
+}
+
+* {
+    margin: 0px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+
+#sidebar {
+    height: calc(100vh - 40px);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    border-radius: 10px;
+    width: calc($sidebar-length - 20px);
+    box-shadow: $box-shadow;
+    background: $theme-bg;
+    overflow: hidden;
+	h1 {
+		text-align: center;
+		padding: 20px;
+		background: $theme-header-bg;
+		font-size: $h1fs;
+	}	
+}
+
+.flex-align-right{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.my-20{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

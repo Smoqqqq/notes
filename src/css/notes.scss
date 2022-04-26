@@ -1,0 +1,33 @@
+#notes-container {
+    margin: 20px;
+    margin-left: calc($sidebar-length + 20px);
+    padding: 10px;
+    border-radius: 10px;
+    // box-shadow: $box-shadow;
+    border: 1px solid $theme-header-bg;
+    display: flex;
+    flex-flow: row wrap;
+    height: calc(100vh - 62px);
+    position: relative;
+    background: $theme-bg;
+    .note {
+        border: 1px solid $theme-header-bg;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        height: 200px;
+        width: 300px;
+        overflow: hidden;
+        margin: 10px;
+        .note-content {
+            padding: 20px;
+        }
+        .note-title {
+            padding: 20px;
+            background:  $theme-header-bg;
+        }
+        &.empty {
+            display: grid;
+            place-items: center;
+        }
+    }
+}

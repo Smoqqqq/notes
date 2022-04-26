@@ -1,0 +1,48 @@
+.note-edit-page {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    padding: 20px;
+    background: $theme-bg;
+    border-radius: 10px;
+    animation: $transition openIn;
+    // box-shadow: $box-shadow;
+    border: 1px solid $theme-header-bg;
+    overflow: hidden;
+    h3{
+        font-size: $h1fs;
+        padding: 20px;
+        margin: -20px -20px 10px -20px;
+        background: $theme-header-bg;
+    }
+    input{
+        width: calc(100% - 32px);
+        padding: 15px;
+        font-size: 20px;
+        outline: none;
+        border: 1px solid black;
+        transition: $transition;
+        border-radius: 5px;
+        margin: 15px 0px;
+        background: $theme-body-bg;
+        &:active, &:focus{
+            box-shadow: 0px 0px 0px 3px black;
+        }
+    }
+    .tox-tinymce{
+        border-radius: 5px;
+    }
+}
+
+@keyframes openIn {
+    0%{
+        transform: scale(0.5);
+        opacity: 0
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
